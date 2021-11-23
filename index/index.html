@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  
+</head>
+<body>
+
+<div class="background"> 
+<div class="nav">
+    <a class="a active" href="#">H O M E</a>
+    <a class="b" href="#">A B O U T  M E</a>
+    <a class="c" href="#">G A L L E R Y</a>
+    <a class="d" href="#">S O C I A L  M E D I A</a>
+</div>
+
+<div class="content">
+    <div class="home">
+        <h1>Clarence Urmatam</h1>
+        <h3>Mobile Photographer/ Artist</h3>
+    </div>
+
+    <div class="aboutus">
+        <h1><b>Introduction</b></h1><br>
+          <p style ="text-align: justify">Hi, I'm Clarence, I just finished my 2nd year in college in Polytechnic University of the Philippines Santa Rosa Campus,
+             taking up Bachelor of Science in Information Technology, however, due to the pandemic and all, I decided to look for a job.
+             And since I don't have a job experience yet, let me tell you something about my life as a student instead. 
+             I graduated in Senior High School with honors and awarded for being perfect in attendance.
+             While in college, I chose IT as my course because first it is in demand, second is, I love to analyze problems and give a solution for it, and lastly is, 
+             I enjoyed making programs that makes our life easier. Having this 2-year experience in IT course, I think this is my edge for this job, 
+             you can count on me in analyzation, problem solving, and being resourceful. In my first year in college, I’ve become a dean's lister,
+             while in my second year I've become a president's lister. Studying in college, I always become a leader in our activities or projects, 
+             I’m the person who will initiate and guide the group to finish the task correctly. During my free time, I play computer games, watch foreign movies or documentaries, 
+             and sometimes I do photography. That's it.</p>
+    </div>
+    <div class= "gallery">
+        <div class="image">
+            <img src="images/1.jpeg">
+        </div>
+        <div class="image">
+            <img src="images/2.jpeg">
+        </div>
+        <div class="image">
+            <img src="images/3.jpeg">
+        </div>
+        <div class="image">
+            <img src="images/4.jpg">
+        </div>
+        <div class="image">
+            <img src="images/5.jpg">
+        </div>
+        <div class="image">
+            <img src="images/6.jpeg">
+        </div>
+        <div class="image">
+            <img src="images/7.jpeg">
+        </div>
+        <div class="image">
+            <img src="images/8.jpeg">
+        </div>
+        <div class="image">
+            <img src="images/9.jpeg">
+        </div>
+        <div class="image">
+            <img src="images/10.jpg">
+        </div>
+        
+    </div>
+
+    <div class="socialmedia">
+        <div class="button">
+           <div class="icon">
+            <a href="https://www.facebook.com/clrnc.phtgrphy" target="_blank"><li><i class="fab fa-facebook-f"></i></li></a>
+           </div>
+           <span>Facebook</span>
+        </div>
+        <div class="button">
+           <div class="icon">
+            <a href="https://twitter.com/i/flow/login" target="_blank"><li><i class="fab fa-twitter"></i></li></a>
+           </div>
+           <span>Twitter</span>
+        </div>
+        <div class="button">
+           <div class="icon">
+            <a href="https://www.instagram.com/" target="_blank"><li><i class="fab fa-instagram"></i></li></a>
+           </div>
+           <span>Instagram</span>
+        </div>
+
+        <div class="button">
+           <div class="icon">
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><li><i class="fab fa-youtube"></i></li></a>
+           </div>
+           <span>YouTube</span>
+        </div>
+     </div>
+
+</div>
+
+
+</div>
+
+
+
+<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+
+    $(document).ready(function(){
+        $('a').click(function(){
+            //alert("i am clicked");
+            var selected = $(this);
+            $('a').removeClass("active");
+            $(selected).addClass('active');
+        });
+
+        var $a = $('.a'),
+        $b = $('.b'),
+        $c = $('.c'),
+        $d = $('.d'),
+        $home = $('.home'),
+        $aboutus = $('.aboutus'),
+        $gallery = $('.gallery'),
+        $socialmedia = $('.socialmedia');
+        $a.click(function(){
+            $home.fadeIn();
+            $aboutus.fadeOut();
+            $gallery.fadeOut();
+            $socialmedia.fadeOut();
+   
+            });
+        $b.click(function(){
+            $aboutus.fadeIn();
+            $home.fadeOut();
+            $gallery.fadeOut();
+            $socialmedia.fadeOut();
+        });
+        $c.click(function(){
+            $gallery.fadeIn();
+            $home.fadeOut();
+            $aboutus.fadeOut();
+            $socialmedia.fadeOut();
+        });
+        $d.click(function(){
+            $socialmedia.fadeIn();
+            $home.fadeOut();
+            $aboutus.fadeOut();
+            $gallery.fadeOut();
+        });
+    });
+
+</script>
+
+
+
+</body>
+</html>
